@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <section>
+    <style>
+        body {
+	padding-top:70px;
+}
+    </style>
+    <section>
+        <style>
+            .navbar {
+                min-height: 15px;
+                font-size: 18px;
+                font-weight: 500;
+                width: auto;
+            }
+
+            .navbar-brand {
+                padding: 0 1px;
+                height: 30px;
+                line-height: 30px;
+                font-weight: 400;
+                font-size: 24px;
+            }
+
+            .navbar-toggle {
+                /* (80px - button height 34px) / 2 = 23px */
+                margin-top: 15px;
+                padding: 5px 5px !important;
+            }
+
+            @media (min-width: 768px) {
+                .navbar-nav>li>a {
+                    /* (80px - line-height of 27px) / 2 = 26.5px */
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    line-height: 5px;
+                }
+            }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top ">
+            <nav class="navbar navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">
+                    <img src="s2.png" width="35" height="35" class="d-inline-block align-top" alt="">
+                    Junglee Apparels
+                </a>
+            </nav>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link " href="aboutus.html">About us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item nav-item active" href="product1.html">product1</a>
+                            <a class="dropdown-item" href="#">Product2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">other products</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="joinus.html">Join us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item active" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section style="margin-top: 20px;">
+        <div class="jumbotron" >
+            <h1 class="display-4">Hey there !</h1>
+            <p class="lead">Don't worry at all , bcoz we are always here for your service , any doubt please text us by pressing below button</p>
+            <hr class="my-4">
+            <p>You can contact us any time for any reason, we are always there to assist you.</p>
+            <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+                <b> Click here to Send your Query</b>
+              </button>
+            
+              <!-- The Modal -->
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Please Write Us</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+
+                            <span class="anchor" id="formContact"></span>
+        
+                            <!-- form user info -->
+                            <div class="card card-outline-secondary">
+                                <div class="card-header">
+                                    <h3 class="mb-0">Contact</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form class="form" role="form" autocomplete="off">
+                                        <fieldset>
+                                            <label for="name2" class="mb-0">Name</label>
+                                            <div class="row mb-1">
+                                                <div class="col-lg-12">
+                                                    <input type="text" name="name2" id="name2" class="form-control" required="">
+                                                </div>
+                                            </div>
+                                            <label for="email2" class="mb-0">Email</label>
+                                            <div class="row mb-1">
+                                                <div class="col-lg-12">
+                                                    <input type="text" name="email2" id="email2" class="form-control" required="">
+                                                </div>
+                                            </div>
+                                            <label for="contact2" class="mb-0">Contact No.</label>
+                                            <div class="row mb-1">
+                                                <div class="col-lg-12">
+                                                    <input type="number" name="contact2" id="contact2" class="form-control" required="">
+                                                </div>
+                                            </div>
+                                            <label for="message2" class="mb-0">Message</label>
+                                            <div class="row mb-1">
+                                                <div class="col-lg-12">
+                                                    <textarea rows="6" name="message2" id="message2" class="form-control" required=""></textarea>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-secondary btn-lg float-right">Send Message</button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <p style="margin-right: auto;">We will connect to you in short...</p>
+                                  </div>
+                            </div>
+                            <!-- /form user info -->
+        
+                        </div>
+                    </div>
+        </div>
+    </section>
+    <section>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Or you can contact us by :</h1><br>
+              <p><b>Mail : sky487112@gmail.com</b> </p><hr>
+              <p><b>Contact No. : 9876543210</b></p>
+            </div>
+          </div>
+    </section>
+    <section>
+        
+        <div class="bg-primary text-light text-center text-capitalize" style="font-family :'Times New Roman', Times, serif;">
+            <p>Copyright 2020 Aakash Agrawal</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <title>Join Us</title>
+</head>
+<body style="padding-top: 70px;">
+
+    <section>
+        <style>
+            .navbar {
+                min-height: 15px;
+                font-size: 18px;
+                font-weight: 500;
+                width: auto;
+            }
+
+            .navbar-brand {
+                padding: 0 1px;
+                height: 30px;
+                line-height: 30px;
+                font-weight: 400;
+                font-size: 24px;
+            }
+
+            .navbar-toggle {
+                /* (80px - button height 34px) / 2 = 23px */
+                margin-top: 15px;
+                padding: 5px 5px !important;
+            }
+
+            @media (min-width: 768px) {
+                .navbar-nav>li>a {
+                    /* (80px - line-height of 27px) / 2 = 26.5px */
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    line-height: 5px;
+                }
+            }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top ">
+            <nav class="navbar navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">
+                    <img src="s2.png" width="35" height="35" class="d-inline-block align-top" alt="">
+                    Junglee Apparels
+                </a>
+            </nav>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link " href="aboutus.html">About us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="product1.html">Product1</a>
+                            <a class="dropdown-item" href="#">Product2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">other products</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item active" href="#">Join us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-5">Come lets start the journey</h2>
+                    <ul class="nav nav-fill">
+                        <a class="nav-item" href="#formLogin">Login</a>
+                        <a class="nav-item" href="#formRegister">Sign-up</a>
+                    </ul>
+                    <hr class="mb-5">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <span class="anchor" id="formLogin"></span>
+        
+                            <!-- form card login with validation feedback -->
+                            <div class="card card-outline-secondary">
+                                <div class="card-header">
+                                    <h3 class="mb-0">Login</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form class="form" role="form" autocomplete="off" id="loginForm" novalidate="" method="POST">
+                                        <div class="form-group">
+                                            <label for="uname1">Username</label>
+                                            <input type="text" class="form-control" name="uname1" id="uname1" required="">
+                                            <div class="invalid-feedback">Please enter your username or email</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control" id="pwd1" required="" autocomplete="new-password">
+                                            <div class="invalid-feedback">Please enter a password</div>
+                                        </div>
+                                        <div class="form-check small">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input"> <span>Remember me on this computer</span>
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                                    </form>
+                                </div>
+                                <!--/card-body-->
+                            </div>
+                            <!-- /form card login -->
+        
+                        </div>
+                        <div class="col-md-6 offset-md-3">
+                            <span class="anchor" id="formRegister"></span>
+                            <hr class="mb-5">
+        
+                            <!-- form card register -->
+                            <div class="card card-outline-secondary">
+                                <div class="card-header">
+                                    <h3 class="mb-0">Sign Up</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form class="form" role="form" autocomplete="off">
+                                        <div class="form-group">
+                                            <label for="inputName">Name</label>
+                                            <input type="text" class="form-control" id="inputName" placeholder="Full name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputaddress13">Address</label>
+                                            <input type="text" class="form-control" id="inputaddress3" placeholder="Address" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail3">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword3">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputVerify3">Verify</label>
+                                            <input type="password" class="form-control" id="inputVerify3" placeholder="Password (again)" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-success btn-lg float-right">Register</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /form card register -->
+        
+                       
+    </section>
+    <section>
+        
+        <div class="bg-primary text-light text-center text-capitalize" style="font-family :'Times New Roman', Times, serif;">
+            <p>Copyright 2020 Aakash Agrawal</p>
+        </div>
+    </section>
+    
+</body>
+</html>
